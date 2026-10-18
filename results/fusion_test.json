@@ -1,0 +1,44 @@
+{
+ "RRF (1:1)": {
+  "recall@5": 0.79,
+  "recall@10": 0.9,
+  "pool_recall@30": 0.96,
+  "mrr": 0.7034
+ },
+ "RRF (dense 1 : bm25 2)": {
+  "recall@5": 0.8,
+  "recall@10": 0.89,
+  "pool_recall@30": 0.93,
+  "mrr": 0.6789
+ },
+ "RRF (dense 1 : bm25 3)": {
+  "recall@5": 0.8,
+  "recall@10": 0.89,
+  "pool_recall@30": 0.93,
+  "mrr": 0.6784
+ },
+ "RSF (0.5/0.5)": {
+  "recall@5": 0.87,
+  "recall@10": 0.92,
+  "pool_recall@30": 0.96,
+  "mrr": 0.7495
+ },
+ "RSF (0.4 dense/0.6 bm25)": {
+  "recall@5": 0.87,
+  "recall@10": 0.9,
+  "pool_recall@30": 0.95,
+  "mrr": 0.7559
+ },
+ "RSF (0.3/0.7)": {
+  "recall@5": 0.86,
+  "recall@10": 0.9,
+  "pool_recall@30": 0.95,
+  "mrr": 0.7374
+ },
+ "RSF (0.2/0.8)": {
+  "recall@5": 0.86,
+  "recall@10": 0.89,
+  "pool_recall@30": 0.95,
+  "mrr": 0.7188
+ }
+}

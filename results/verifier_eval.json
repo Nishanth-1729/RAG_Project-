@@ -1,0 +1,120 @@
+{
+ "n": 628,
+ "llm_judge": {
+  "accuracy": 0.6736,
+  "macro_f1": 0.6481,
+  "unsupported_claim_detection_rate": 0.845,
+  "false_alarm_rate": 0.1083,
+  "per_class": {
+   "SUPPORTED": 0.757,
+   "PARTIALLY_SUPPORTED": 0.567,
+   "UNSUPPORTED": 0.739,
+   "CONTRADICTED": 0.53
+  }
+ },
+ "nli_finetuned": {
+  "accuracy": 0.9315,
+  "macro_f1": 0.9316,
+  "unsupported_claim_detection_rate": 0.9703,
+  "false_alarm_rate": 0.0637,
+  "per_class": {
+   "SUPPORTED": 0.925,
+   "PARTIALLY_SUPPORTED": 0.898,
+   "UNSUPPORTED": 0.99,
+   "CONTRADICTED": 0.913
+  }
+ },
+ "ensemble": {
+  "accuracy": 0.6783,
+  "macro_f1": 0.6558,
+  "unsupported_claim_detection_rate": 0.8599,
+  "false_alarm_rate": 0.1274,
+  "per_class": {
+   "SUPPORTED": 0.761,
+   "PARTIALLY_SUPPORTED": 0.567,
+   "UNSUPPORTED": 0.742,
+   "CONTRADICTED": 0.554
+  }
+ },
+ "scifact_validation": {
+  "n": 340,
+  "llm_judge": {
+   "accuracy": 0.6941,
+   "macro_f1": 0.6018,
+   "per_class": {
+    "SUPPORTED": 0.752,
+    "UNSUPPORTED": 0.748,
+    "CONTRADICTED": 0.306
+   }
+  },
+  "nli_finetuned": {
+   "accuracy": 0.8206,
+   "macro_f1": 0.8112,
+   "per_class": {
+    "SUPPORTED": 0.845,
+    "UNSUPPORTED": 0.824,
+    "CONTRADICTED": 0.764
+   }
+  }
+ },
+ "confusion_synthetic": {
+  "labels": [
+   "SUPPORTED",
+   "PARTIALLY_SUPPORTED",
+   "UNSUPPORTED",
+   "CONTRADICTED"
+  ],
+  "llm_judge": [
+   [
+    140,
+    13,
+    3,
+    1
+   ],
+   [
+    64,
+    72,
+    21,
+    0
+   ],
+   [
+    2,
+    1,
+    154,
+    0
+   ],
+   [
+    7,
+    11,
+    82,
+    57
+   ]
+  ],
+  "nli_finetuned": [
+   [
+    147,
+    6,
+    0,
+    4
+   ],
+   [
+    8,
+    141,
+    0,
+    8
+   ],
+   [
+    1,
+    1,
+    155,
+    0
+   ],
+   [
+    5,
+    9,
+    1,
+    142
+   ]
+  ]
+ }
+}

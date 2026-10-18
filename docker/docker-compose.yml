@@ -1,0 +1,45 @@
+# docker compose -f docker/docker-compose.yml up --build
+# Needs an NVIDIA GPU + NVIDIA container toolkit for the llm / api services.
+# To use a hosted LLM instead of the local one: remove the `llm` service and set LLM_BASE_URL / LLM_API_KEY / LLM_MODEL in .env.
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.19.2
+    ports: ["6333:6333"]
+    volumes: ["qdrant_data:/qdrant/storage"]
+
+  postgres:
+    image: postgres:16
+    environment: {POSTGRES_USER: scholar, POSTGRES_PASSWORD: scholar, POSTGRES_DB: scholar}
+    volumes: ["pg_data:/var/lib/postgresql/data"]
+
+  llm:
+    image: vllm/vllm-openai:latest
+    command: >
+      --model Qwen/Qwen2.5-7B-Instruct --quantization fp8 --max-model-len 12288
+      --gpu-memory-utilization 0.75 --max-num-seqs 64 --max-num-batched-tokens 4096
+      --structured-outputs-config '{"backend": "xgrammar", "disable_any_whitespace": true}'
+    environment: {VLLM_USE_FLASHINFER_SAMPLER: "0"}
+    ports: ["8000:8000"]
+    volumes: ["hf_cache:/root/.cache/huggingface"]
+    deploy: {resources: {reservations: {devices: [{driver: nvidia, count: 1, capabilities: [gpu]}]}}}
+
+  api:
+    build: {context: .., dockerfile: docker/Dockerfile.app}
+    env_file: ../.env
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      LLM_BASE_URL: http://llm:8000/v1
+      DATABASE_URL: postgresql+psycopg2://scholar:scholar@postgres:5432/scholar
+    ports: ["8100:8100"]
+    volumes: ["../data:/app/data", "../results:/app/results", "../models:/app/models", "hf_cache:/root/.cache/huggingface"]
+    depends_on: [qdrant, postgres, llm]
+    deploy: {resources: {reservations: {devices: [{driver: nvidia, count: 1, capabilities: [gpu]}]}}}
+
+  ui:
+    build: {context: .., dockerfile: docker/Dockerfile.app}
+    command: streamlit run frontend/app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    environment: {API_URL: "http://api:8100"}
+    ports: ["8501:8501"]
+    depends_on: [api]
+
+volumes: {qdrant_data: {}, pg_data: {}, hf_cache: {}}

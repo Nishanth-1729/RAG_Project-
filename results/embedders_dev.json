@@ -1,0 +1,282 @@
+{
+ "sentence-transformers/all-MiniLM-L6-v2": {
+  "dense": {
+   "recall@1": 0.4167,
+   "recall@3": 0.5833,
+   "recall@5": 0.65,
+   "recall@10": 0.725,
+   "mrr": 0.5164,
+   "ndcg@5": 0.5048,
+   "precision@5": 0.1383,
+   "avg_ctx_tokens@5": 1373.8083,
+   "latency_ms_mean": 32.7
+  },
+  "hybrid": {
+   "recall@1": 0.6583,
+   "recall@3": 0.7917,
+   "recall@5": 0.8417,
+   "recall@10": 0.875,
+   "mrr": 0.7368,
+   "ndcg@5": 0.6891,
+   "precision@5": 0.1817,
+   "avg_ctx_tokens@5": 1444.7667,
+   "latency_ms_mean": 4.1
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8,
+   "recall@3": 0.8667,
+   "recall@5": 0.875,
+   "recall@10": 0.8917,
+   "mrr": 0.8348,
+   "ndcg@5": 0.7762,
+   "precision@5": 0.1917,
+   "avg_ctx_tokens@5": 1570.425,
+   "latency_ms_mean": 279.6
+  }
+ },
+ "BAAI/bge-small-en-v1.5": {
+  "dense": {
+   "recall@1": 0.4167,
+   "recall@3": 0.6167,
+   "recall@5": 0.6833,
+   "recall@10": 0.7667,
+   "mrr": 0.5293,
+   "ndcg@5": 0.5078,
+   "precision@5": 0.1467,
+   "avg_ctx_tokens@5": 1448.5083,
+   "latency_ms_mean": 36.8
+  },
+  "hybrid": {
+   "recall@1": 0.6583,
+   "recall@3": 0.7917,
+   "recall@5": 0.8583,
+   "recall@10": 0.8833,
+   "mrr": 0.7358,
+   "ndcg@5": 0.6864,
+   "precision@5": 0.1833,
+   "avg_ctx_tokens@5": 1478.825,
+   "latency_ms_mean": 5.4
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8167,
+   "recall@3": 0.875,
+   "recall@5": 0.8833,
+   "recall@10": 0.9,
+   "mrr": 0.8473,
+   "ndcg@5": 0.7824,
+   "precision@5": 0.195,
+   "avg_ctx_tokens@5": 1572.1,
+   "latency_ms_mean": 254.0
+  }
+ },
+ "BAAI/bge-base-en-v1.5": {
+  "dense": {
+   "recall@1": 0.4167,
+   "recall@3": 0.6,
+   "recall@5": 0.6833,
+   "recall@10": 0.75,
+   "mrr": 0.5262,
+   "ndcg@5": 0.5218,
+   "precision@5": 0.1517,
+   "avg_ctx_tokens@5": 1475.8333,
+   "latency_ms_mean": 37.7
+  },
+  "hybrid": {
+   "recall@1": 0.6667,
+   "recall@3": 0.8,
+   "recall@5": 0.8417,
+   "recall@10": 0.875,
+   "mrr": 0.7368,
+   "ndcg@5": 0.6892,
+   "precision@5": 0.18,
+   "avg_ctx_tokens@5": 1489.825,
+   "latency_ms_mean": 6.0
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8,
+   "recall@3": 0.875,
+   "recall@5": 0.8917,
+   "recall@10": 0.9,
+   "mrr": 0.8392,
+   "ndcg@5": 0.7817,
+   "precision@5": 0.1967,
+   "avg_ctx_tokens@5": 1572.625,
+   "latency_ms_mean": 256.1
+  }
+ },
+ "BAAI/bge-large-en-v1.5": {
+  "dense": {
+   "recall@1": 0.475,
+   "recall@3": 0.6667,
+   "recall@5": 0.7417,
+   "recall@10": 0.7833,
+   "mrr": 0.5852,
+   "ndcg@5": 0.5556,
+   "precision@5": 0.1583,
+   "avg_ctx_tokens@5": 1513.625,
+   "latency_ms_mean": 41.4
+  },
+  "hybrid": {
+   "recall@1": 0.65,
+   "recall@3": 0.8167,
+   "recall@5": 0.8583,
+   "recall@10": 0.8917,
+   "mrr": 0.7352,
+   "ndcg@5": 0.6955,
+   "precision@5": 0.185,
+   "avg_ctx_tokens@5": 1510.0167,
+   "latency_ms_mean": 9.1
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8167,
+   "recall@3": 0.875,
+   "recall@5": 0.8833,
+   "recall@10": 0.9,
+   "mrr": 0.8473,
+   "ndcg@5": 0.7813,
+   "precision@5": 0.195,
+   "avg_ctx_tokens@5": 1569.7833,
+   "latency_ms_mean": 260.3
+  }
+ },
+ "BAAI/bge-m3": {
+  "dense": {
+   "recall@1": 0.5167,
+   "recall@3": 0.7083,
+   "recall@5": 0.7833,
+   "recall@10": 0.8833,
+   "mrr": 0.6319,
+   "ndcg@5": 0.6075,
+   "precision@5": 0.1717,
+   "avg_ctx_tokens@5": 1490.3833,
+   "latency_ms_mean": 8.8
+  },
+  "hybrid": {
+   "recall@1": 0.6417,
+   "recall@3": 0.8167,
+   "recall@5": 0.875,
+   "recall@10": 0.9167,
+   "mrr": 0.7414,
+   "ndcg@5": 0.7023,
+   "precision@5": 0.1867,
+   "avg_ctx_tokens@5": 1497.4417,
+   "latency_ms_mean": 9.0
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8333,
+   "recall@3": 0.9083,
+   "recall@5": 0.9167,
+   "recall@10": 0.9333,
+   "mrr": 0.8723,
+   "ndcg@5": 0.7994,
+   "precision@5": 0.2,
+   "avg_ctx_tokens@5": 1567.85,
+   "latency_ms_mean": 260.2
+  }
+ },
+ "intfloat/e5-base-v2": {
+  "dense": {
+   "recall@1": 0.4917,
+   "recall@3": 0.625,
+   "recall@5": 0.7083,
+   "recall@10": 0.8167,
+   "mrr": 0.5863,
+   "ndcg@5": 0.5693,
+   "precision@5": 0.1567,
+   "avg_ctx_tokens@5": 1436.4,
+   "latency_ms_mean": 43.0
+  },
+  "hybrid": {
+   "recall@1": 0.6417,
+   "recall@3": 0.8167,
+   "recall@5": 0.85,
+   "recall@10": 0.875,
+   "mrr": 0.7271,
+   "ndcg@5": 0.696,
+   "precision@5": 0.1817,
+   "avg_ctx_tokens@5": 1482.3333,
+   "latency_ms_mean": 6.0
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8083,
+   "recall@3": 0.8833,
+   "recall@5": 0.8917,
+   "recall@10": 0.9083,
+   "mrr": 0.8473,
+   "ndcg@5": 0.788,
+   "precision@5": 0.1983,
+   "avg_ctx_tokens@5": 1563.4333,
+   "latency_ms_mean": 255.7
+  }
+ },
+ "models/scholar-embed": {
+  "dense": {
+   "recall@1": 0.5167,
+   "recall@3": 0.6583,
+   "recall@5": 0.7417,
+   "recall@10": 0.8083,
+   "mrr": 0.6085,
+   "ndcg@5": 0.6095,
+   "precision@5": 0.1617,
+   "avg_ctx_tokens@5": 1451.6,
+   "latency_ms_mean": 10.2
+  },
+  "hybrid": {
+   "recall@1": 0.625,
+   "recall@3": 0.8083,
+   "recall@5": 0.85,
+   "recall@10": 0.8833,
+   "mrr": 0.7233,
+   "ndcg@5": 0.6992,
+   "precision@5": 0.1833,
+   "avg_ctx_tokens@5": 1488.9167,
+   "latency_ms_mean": 6.0
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8167,
+   "recall@3": 0.8833,
+   "recall@5": 0.8917,
+   "recall@10": 0.9083,
+   "mrr": 0.8515,
+   "ndcg@5": 0.7885,
+   "precision@5": 0.1967,
+   "avg_ctx_tokens@5": 1566.5917,
+   "latency_ms_mean": 257.0
+  }
+ },
+ "models/scholar-embed-m3": {
+  "dense": {
+   "recall@1": 0.6,
+   "recall@3": 0.7333,
+   "recall@5": 0.8,
+   "recall@10": 0.8667,
+   "mrr": 0.6837,
+   "ndcg@5": 0.6514,
+   "precision@5": 0.1733,
+   "avg_ctx_tokens@5": 1488.6833,
+   "latency_ms_mean": 21.8
+  },
+  "hybrid": {
+   "recall@1": 0.6583,
+   "recall@3": 0.8083,
+   "recall@5": 0.8667,
+   "recall@10": 0.9,
+   "mrr": 0.7458,
+   "ndcg@5": 0.709,
+   "precision@5": 0.185,
+   "avg_ctx_tokens@5": 1499.05,
+   "latency_ms_mean": 9.1
+  },
+  "hybrid_rerank": {
+   "recall@1": 0.8167,
+   "recall@3": 0.8917,
+   "recall@5": 0.9,
+   "recall@10": 0.9167,
+   "mrr": 0.8553,
+   "ndcg@5": 0.7922,
+   "precision@5": 0.1967,
+   "avg_ctx_tokens@5": 1568.6083,
+   "latency_ms_mean": 259.8
+  }
+ }
+}

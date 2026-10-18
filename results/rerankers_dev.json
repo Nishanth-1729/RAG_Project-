@@ -1,0 +1,57 @@
+{
+ "none (hybrid, RSF fusion)": {
+  "recall@1": 0.6417,
+  "recall@3": 0.8167,
+  "recall@5": 0.875,
+  "recall@10": 0.9167,
+  "mrr": 0.7414,
+  "ndcg@5": 0.7023,
+  "precision@5": 0.1867,
+  "avg_ctx_tokens@5": 1497.4417,
+  "latency_ms_mean": 10.1
+ },
+ "BAAI/bge-reranker-v2-m3": {
+  "recall@1": 0.8333,
+  "recall@3": 0.9083,
+  "recall@5": 0.9167,
+  "recall@10": 0.9333,
+  "mrr": 0.8723,
+  "ndcg@5": 0.7994,
+  "precision@5": 0.2,
+  "avg_ctx_tokens@5": 1567.85,
+  "latency_ms_mean": 260.3
+ },
+ "BAAI/bge-reranker-base": {
+  "recall@1": 0.7333,
+  "recall@3": 0.9,
+  "recall@5": 0.9083,
+  "recall@10": 0.925,
+  "mrr": 0.8167,
+  "ndcg@5": 0.759,
+  "precision@5": 0.2,
+  "avg_ctx_tokens@5": 1547.0833,
+  "latency_ms_mean": 129.2
+ },
+ "cross-encoder/ms-marco-MiniLM-L-6-v2": {
+  "recall@1": 0.7,
+  "recall@3": 0.85,
+  "recall@5": 0.8917,
+  "recall@10": 0.925,
+  "mrr": 0.7798,
+  "ndcg@5": 0.7415,
+  "precision@5": 0.195,
+  "avg_ctx_tokens@5": 1513.125,
+  "latency_ms_mean": 74.9
+ },
+ "models/scholar-rerank": {
+  "recall@1": 0.825,
+  "recall@3": 0.925,
+  "recall@5": 0.9333,
+  "recall@10": 0.9333,
+  "mrr": 0.8743,
+  "ndcg@5": 0.7958,
+  "precision@5": 0.2,
+  "avg_ctx_tokens@5": 1616.45,
+  "latency_ms_mean": 272.7
+ }
+}

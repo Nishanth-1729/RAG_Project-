@@ -1,0 +1,114 @@
+[
+ [
+  "survey",
+  "What are recent methods for using machine learning to accelerate numerical linear algebra solvers?"
+ ],
+ [
+  "survey",
+  "Give me an overview of neural network preconditioners for iterative solvers."
+ ],
+ [
+  "survey",
+  "How is deep learning used in algebraic multigrid methods?"
+ ],
+ [
+  "survey",
+  "Which approaches exist for learning sparse approximate inverses?"
+ ],
+ [
+  "survey",
+  "State of the art in physics-informed neural networks for PDEs."
+ ],
+ [
+  "survey",
+  "What approaches have been proposed for randomized low-rank matrix approximation?"
+ ],
+ [
+  "comparison",
+  "Compare learned preconditioners with classical incomplete factorization preconditioners."
+ ],
+ [
+  "comparison",
+  "What is the difference between FGMRES and GMRES with a learned preconditioner?"
+ ],
+ [
+  "comparison",
+  "Neural operators versus graph neural networks for solving PDEs: how do they differ?"
+ ],
+ [
+  "comparison",
+  "Compare the approaches of paper 3 and paper 7."
+ ],
+ [
+  "comparison",
+  "How do H2 matrices and the fast multipole method differ in complexity?"
+ ],
+ [
+  "comparison",
+  "Contrast randomized SVD with Lanczos bidiagonalization."
+ ],
+ [
+  "qa",
+  "What is flexible GMRES?"
+ ],
+ [
+  "qa",
+  "How does the strength-of-connection heuristic work in graph neural multilevel preconditioners?"
+ ],
+ [
+  "qa",
+  "Which loss function does the BandPC model use for training?"
+ ],
+ [
+  "qa",
+  "What dataset was used to evaluate the neural incomplete Cholesky preconditioner?"
+ ],
+ [
+  "qa",
+  "What does the condition number of a matrix measure?"
+ ],
+ [
+  "qa",
+  "How many matrices are in the SuiteSparse benchmark used by the GNP paper?"
+ ],
+ [
+  "gaps",
+  "What are the limitations of current ML-based fast linear solvers and what directions remain?"
+ ],
+ [
+  "gaps",
+  "What open problems exist in learned multigrid methods?"
+ ],
+ [
+  "gaps",
+  "Which research directions are promising for neural preconditioners?"
+ ],
+ [
+  "gaps",
+  "What challenges prevent neural operators from being used as general PDE solvers?"
+ ],
+ [
+  "gaps",
+  "Identify recurring limitations in these papers and suggest future work."
+ ],
+ [
+  "gaps",
+  "What are the main weaknesses of existing graph neural network preconditioners?"
+ ],
+ [
+  "incoherent",
+  "entanglement of banana sheep in quantum cafeteria topology"
+ ],
+ [
+  "incoherent",
+  "emotional quarterly revenue of rotating sandwiches in Hilbert spaces"
+ ],
+ [
+  "incoherent",
+  "asdf qwer zxcv lorem blah"
+ ],
+ [
+  "incoherent",
+  "how purple monkeys sing the derivative of Tuesday"
+ ]
+]

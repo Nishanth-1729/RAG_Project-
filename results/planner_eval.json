@@ -1,0 +1,12 @@
+{
+ "n": 28,
+ "intent_accuracy": 1.0,
+ "confusions": {},
+ "errors": [],
+ "baseline_prompt_accuracy_24_queries": 0.875,
+ "baseline_errors": [
+  "survey->comparison: Which approaches exist for learning sparse approximate inverses?",
+  "qa->survey: What is flexible GMRES?",
+  "gaps->survey: Which research directions are promising for neural preconditioners?"
+ ]
+}

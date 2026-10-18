@@ -1,0 +1,68 @@
+{
+ "Full system (section chunks + contextual header + hybrid + rerank)": {
+  "recall@1": 0.81,
+  "recall@3": 0.88,
+  "recall@5": 0.92,
+  "recall@10": 0.94,
+  "mrr": 0.8554,
+  "ndcg@5": 0.7392,
+  "precision@5": 0.202,
+  "avg_ctx_tokens@5": 1504.55,
+  "latency_ms_mean": 259.0
+ },
+ "- BM25 (dense + rerank)": {
+  "recall@1": 0.75,
+  "recall@3": 0.81,
+  "recall@5": 0.84,
+  "recall@10": 0.86,
+  "mrr": 0.7876,
+  "ndcg@5": 0.6812,
+  "precision@5": 0.182,
+  "avg_ctx_tokens@5": 1518.39,
+  "latency_ms_mean": 258.1
+ },
+ "- dense retriever (BM25 + rerank)": {
+  "recall@1": 0.8,
+  "recall@3": 0.88,
+  "recall@5": 0.91,
+  "recall@10": 0.93,
+  "mrr": 0.8453,
+  "ndcg@5": 0.7251,
+  "precision@5": 0.2,
+  "avg_ctx_tokens@5": 1508.02,
+  "latency_ms_mean": 252.8
+ },
+ "- reranker (hybrid only)": {
+  "recall@1": 0.68,
+  "recall@3": 0.8,
+  "recall@5": 0.87,
+  "recall@10": 0.9,
+  "mrr": 0.7524,
+  "ndcg@5": 0.6638,
+  "precision@5": 0.194,
+  "avg_ctx_tokens@5": 1439.19,
+  "latency_ms_mean": 7.7
+ },
+ "- section-aware chunking (fixed 384 tokens)": {
+  "recall@1": 0.74,
+  "recall@3": 0.9,
+  "recall@5": 0.93,
+  "recall@10": 0.93,
+  "mrr": 0.8192,
+  "ndcg@5": 0.7502,
+  "precision@5": 0.2,
+  "avg_ctx_tokens@5": 1891.52,
+  "latency_ms_mean": 275.6
+ },
+ "- contextual header (embed raw chunk text)": {
+  "recall@1": 0.8,
+  "recall@3": 0.87,
+  "recall@5": 0.9,
+  "recall@10": 0.92,
+  "mrr": 0.8433,
+  "ndcg@5": 0.7249,
+  "precision@5": 0.196,
+  "avg_ctx_tokens@5": 1509.74,
+  "latency_ms_mean": 259.9
+ }
+}

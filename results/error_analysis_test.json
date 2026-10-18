@@ -1,0 +1,426 @@
+{
+ "split": "test",
+ "n_questions": 100,
+ "retrieval_outcomes": {
+  "ok (all evidence in top-5)": {
+   "count": 86,
+   "percent": 86.0
+  },
+  "retrieval failure - wrong paper retrieved": {
+   "count": 7,
+   "percent": 7.0
+  },
+  "ranking failure (candidate found, ranked below top-5)": {
+   "count": 6,
+   "percent": 6.0
+  },
+  "parsing/chunking loss (evidence text not in any chunk)": {
+   "count": 1,
+   "percent": 1.0
+  }
+ },
+ "retrieval_misses": [
+  {
+   "qid": "t016",
+   "type": "factual",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "What are the limitations of the multigrid method when applied to certain types of PDEs?"
+  },
+  {
+   "qid": "t057",
+   "type": "mathematical",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "What is the fixed hyperparameter ϵ used in the experiments and what is its value?"
+  },
+  {
+   "qid": "t065",
+   "type": "results",
+   "category": "parsing/chunking loss (evidence text not in any chunk)",
+   "question": "What does U1 represent in the context of solving the linear system Ax⋆=b using pCG?"
+  },
+  {
+   "qid": "t086",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "Compare the preconditioning methods used in the hybrid iterative solvers (HINTS) and the preconditioned conjugate gradient (PCG) method, focusing on their construction and application costs."
+  },
+  {
+   "qid": "t087",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "How do the approaches using metric-matched formulation and condition number as loss energy differ in their performance on various PDE settings? The metric-matched formulation was evaluated on CDR and nonlinear PDE settings, while the condition number approach did not converge on heat-2d, poisson-2d, and poisson-3d settings with more than 10,000 nodes. The condition number approach required five days of training but still did not converge, whereas the metric-matched formulation showed more stable convergence across different settings."
+  },
+  {
+   "qid": "t088",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "How do the robustness properties of the level-wise trained neural smoothers compare to the behavior of the smoothing iteration in terms of error reduction for high-frequency components?"
+  },
+  {
+   "qid": "t090",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "How do the training procedures differ between the level-wise training scheme for neural multigrid smoothers and the deep learning technique for improving search directions in linear systems?"
+  },
+  {
+   "qid": "t091",
+   "type": "comparison",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "How do the node features differ between the deep learning-enhanced preconditioning method and the algebraic multigrid pressure solver approach?"
+  },
+  {
+   "qid": "t092",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "How do the concepts of spectrally equivalent sequences of matrices and block-diagonalization using Fourier basis relate in terms of computational complexity reduction?"
+  },
+  {
+   "qid": "t095",
+   "type": "comparison",
+   "category": "ranking failure (candidate found, ranked below top-5)",
+   "question": "How do the computational efficiency and convergence properties of using condition number as loss energy (κ loss) compare to the proposed datadriven loss function in handling large-scale problems, and how does this differ from the approach taken in the neural preconditioned Born series (NPBS) framework?"
+  },
+  {
+   "qid": "t096",
+   "type": "comparison",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "What are the optimal choices of ω for the damped Jacobi method and the weighted Jacobi method, and how do their smoothing effects differ for low-frequency errors?"
+  },
+  {
+   "qid": "t097",
+   "type": "comparison",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "How do the training schemes differ between the two methods, and what types of restrictions and prolongations are used in the second method?"
+  },
+  {
+   "qid": "t098",
+   "type": "comparison",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "How do the methods for constructing the prolongation operator in NSPOD differ from the approach used in leveraging operator learning for preconditioned conjugate gradient method acceleration?"
+  },
+  {
+   "qid": "t099",
+   "type": "comparison",
+   "category": "retrieval failure - wrong paper retrieved",
+   "question": "How do the training configurations differ between the BandPC and Neural Preconditioned Born Series models?"
+  }
+ ],
+ "system": "G D+NLI-first verification",
+ "answer_outcomes": {
+  "correct": {
+   "count": 53,
+   "percent": 53.0
+  },
+  "hallucinated claim": {
+   "count": 22,
+   "percent": 22.0
+  },
+  "over-cautious abstention": {
+   "count": 12,
+   "percent": 12.0
+  },
+  "retrieval failure (evidence not in context)": {
+   "count": 5,
+   "percent": 5.0
+  },
+  "generation failure (incomplete / misread evidence)": {
+   "count": 4,
+   "percent": 4.0
+  },
+  "incorrect citation": {
+   "count": 4,
+   "percent": 4.0
+  }
+ },
+ "answer_failure_breakdown": {
+  "hallucinated claim": 22,
+  "generation failure (incomplete / misread evidence)": 4,
+  "incorrect citation": 4,
+  "retrieval failure (evidence not in context)": 5,
+  "over-cautious abstention": 12
+ },
+ "answer_failures": [
+  {
+   "qid": "t001",
+   "type": "factual",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t002",
+   "type": "factual",
+   "category": "generation failure (incomplete / misread evidence)",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t003",
+   "type": "factual",
+   "category": "incorrect citation",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t004",
+   "type": "factual",
+   "category": "incorrect citation",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t006",
+   "type": "factual",
+   "category": "generation failure (incomplete / misread evidence)",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t013",
+   "type": "factual",
+   "category": "incorrect citation",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t016",
+   "type": "factual",
+   "category": "retrieval failure (evidence not in context)",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t018",
+   "type": "factual",
+   "category": "generation failure (incomplete / misread evidence)",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t022",
+   "type": "methodological",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t025",
+   "type": "methodological",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t026",
+   "type": "methodological",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t029",
+   "type": "methodological",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t030",
+   "type": "methodological",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t032",
+   "type": "methodological",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t038",
+   "type": "methodological",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t039",
+   "type": "methodological",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t042",
+   "type": "mathematical",
+   "category": "incorrect citation",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t043",
+   "type": "mathematical",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t049",
+   "type": "mathematical",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t050",
+   "type": "mathematical",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t053",
+   "type": "mathematical",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t054",
+   "type": "mathematical",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t057",
+   "type": "mathematical",
+   "category": "retrieval failure (evidence not in context)",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t062",
+   "type": "results",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t064",
+   "type": "results",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t068",
+   "type": "results",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t070",
+   "type": "results",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t071",
+   "type": "results",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t072",
+   "type": "results",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t075",
+   "type": "limitations",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t076",
+   "type": "limitations",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t077",
+   "type": "limitations",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t078",
+   "type": "limitations",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t084",
+   "type": "limitations",
+   "category": "generation failure (incomplete / misread evidence)",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t086",
+   "type": "comparison",
+   "category": "retrieval failure (evidence not in context)",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t087",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t088",
+   "type": "comparison",
+   "category": "retrieval failure (evidence not in context)",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t089",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t090",
+   "type": "comparison",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t091",
+   "type": "comparison",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t092",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t093",
+   "type": "comparison",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t094",
+   "type": "comparison",
+   "category": "over-cautious abstention",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t096",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t097",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.5
+  },
+  {
+   "qid": "t098",
+   "type": "comparison",
+   "category": "hallucinated claim",
+   "correctness": 0.0
+  },
+  {
+   "qid": "t099",
+   "type": "comparison",
+   "category": "retrieval failure (evidence not in context)",
+   "correctness": 0.0
+  }
+ ]
+}

@@ -1,0 +1,128 @@
+{
+ "question": "What are recent methods for using machine learning to accelerate numerical linear algebra solvers?",
+ "intent": "survey",
+ "search_stats": {
+  "queries": [
+   "What are recent methods for using machine learning to accelerate numerical linear algebra solvers?",
+   "machine learning numerical linear algebra",
+   "accelerate linear algebra ml",
+   "numerical linear algebra optimization ml",
+   "ML techniques for linear algebra",
+   "speed up linear algebra with ML",
+   "machine learning in linear algebra solvers",
+   "linear algebra acceleration methods",
+   "numerical linear algebra ML approaches"
+  ],
+  "sources": [
+   "arxiv",
+   "semantic_scholar",
+   "crossref"
+  ],
+  "candidates_raw": 253,
+  "after_dedup": 171,
+  "per_source": {
+   "arxiv": 118,
+   "semantic_scholar": 0,
+   "crossref": 135
+  },
+  "selected": 12
+ },
+ "decisions": [
+  {
+   "step": 1,
+   "action": "search",
+   "reason": "default policy",
+   "allowed": [
+    "search"
+   ]
+  },
+  {
+   "step": 2,
+   "action": "ingest",
+   "reason": "default policy",
+   "allowed": [
+    "ingest"
+   ]
+  },
+  {
+   "step": 3,
+   "action": "analyze",
+   "reason": "default policy",
+   "allowed": [
+    "analyze"
+   ]
+  },
+  {
+   "step": 4,
+   "action": "compare",
+   "reason": "To synthesize the findings from the analyzed papers and identify trends or gaps in recent methods for using machine learning to accelerate numerical linear algebra solvers.",
+   "allowed": [
+    "compare",
+    "build_graph",
+    "find_gaps",
+    "report"
+   ]
+  },
+  {
+   "step": 5,
+   "action": "build_graph",
+   "reason": "To visualize the relationships and identify gaps in the surveyed methods.",
+   "allowed": [
+    "build_graph",
+    "find_gaps",
+    "report"
+   ]
+  },
+  {
+   "step": 6,
+   "action": "find_gaps",
+   "reason": "To identify gaps and suggest novel research directions based on the analyzed papers.",
+   "allowed": [
+    "find_gaps",
+    "report"
+   ]
+  },
+  {
+   "step": 7,
+   "action": "report",
+   "reason": "default policy",
+   "allowed": [
+    "report"
+   ]
+  },
+  {
+   "step": 8,
+   "action": "finish",
+   "reason": "default policy",
+   "allowed": [
+    "finish"
+   ]
+  }
+ ],
+ "timings": {
+  "total_s": 442.2
+ },
+ "usage": {
+  "calls": 160,
+  "cached_calls": 0,
+  "prompt_tokens": 172037,
+  "completion_tokens": 29958,
+  "llm_seconds": 773.44,
+  "cost_usd": 0.0
+ },
+ "verification": {
+  "claims_checked": 55,
+  "SUPPORTED": 22,
+  "PARTIALLY_SUPPORTED": 22,
+  "UNSUPPORTED": 10,
+  "CONTRADICTED": 1,
+  "removed": 11,
+  "corrected": 0,
+  "papers_analyzed": 12,
+  "papers_full_text": 12,
+  "papers_abstract_only": 0,
+  "claim_support_rate_initial": 0.6
+ },
+ "n_papers": 12,
+ "comparison_table_rows": 12
+}
